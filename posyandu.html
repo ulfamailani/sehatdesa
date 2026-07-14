@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jadwal Posyandu · SehatDesa</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap site-header__inner" id="siteHeaderInner">
+    <a href="index.html" class="brand">
+      <span class="brand__mark">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 4 6v6c0 5 3.5 8.5 8 10 4.5-1.5 8-5 8-10V6l-8-4z"/></svg>
+      </span>
+      <span class="brand__text">
+        <span class="brand__name">Sehat<em>Desa</em></span>
+        <span class="brand__tag">Kesehatan Komunitas</span>
+      </span>
+    </a>
+
+    <nav class="main-nav">
+      <a href="index.html">Beranda</a>
+      <a href="posyandu.html" class="is-active">Posyandu</a>
+      <a href="gizi.html">Gizi</a>
+      <a href="penyakit.html">Penyakit</a>
+    </nav>
+
+    <div class="header-actions">
+      <span class="btn btn--outline btn--sm" style="pointer-events:none; opacity:0.6;">Demo statis</span>
+      <button class="nav-toggle" id="navToggle" aria-label="Buka menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+<section class="section">
+  <div class="wrap">
+    <div class="section__head">
+      <span class="section__eyebrow">Kegiatan rutin</span>
+      <h1>Jadwal Posyandu</h1>
+      <p>Pantau jadwal penimbangan balita, imunisasi, pemeriksaan ibu hamil, dan kegiatan lansia di desa Anda.</p>
+    </div>
+
+    <div class="card" style="overflow-x:auto;">
+      <table>
+        <thead>
+          <tr><th>Posyandu</th><th>Alamat</th><th>Tanggal</th><th>Jam</th><th>Sasaran</th><th>Kegiatan</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Posyandu Melati I</strong></td>
+            <td>Balai Dusun I, Desa Makmur</td>
+            <td>21 Jul 2026</td>
+            <td>08:00</td>
+            <td><span class="pill">Balita</span></td>
+            <td>Penimbangan balita, imunisasi, dan pemberian vitamin A</td>
+          </tr>
+          <tr>
+            <td><strong>Posyandu Lansia Sejahtera</strong></td>
+            <td>Balai Dusun II, Desa Makmur</td>
+            <td>24 Jul 2026</td>
+            <td>09:00</td>
+            <td><span class="pill">Lansia</span></td>
+            <td>Pemeriksaan tekanan darah dan senam lansia</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="margin-top:16px; font-size:0.9rem; color:var(--ink-soft);">Catatan: ini adalah versi demo statis. Untuk menambah/mengedit jadwal secara langsung, aplikasi perlu dijalankan dengan PHP + database (lihat versi lengkap di repo).</p>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap site-footer__inner">
+    <div>
+      <span class="brand__name brand__name--footer">Sehat<em>Desa</em></span>
+      <p class="footer-note">Layanan informasi kesehatan dasar untuk warga, kader posyandu, dan Puskesmas. Seluruh konten bersifat edukatif dan bukan pengganti diagnosis tenaga medis profesional.</p>
+    </div>
+    <div>
+      <h4>Navigasi</h4>
+      <a href="index.html">Beranda</a>
+      <a href="posyandu.html">Jadwal Posyandu</a>
+      <a href="gizi.html">Gizi Keluarga</a>
+      <a href="penyakit.html">Penyakit Umum</a>
+    </div>
+    <div>
+      <h4>Butuh bantuan segera?</h4>
+      <p>Untuk kondisi darurat, segera hubungi Puskesmas terdekat atau layanan gawat darurat setempat. Jangan menunggu balasan dari Asisten AI.</p>
+    </div>
+  </div>
+  <div class="wrap site-footer__bottom">
+    &copy; 2026 SehatDesa. Dibangun untuk masyarakat desa. — <em>Versi demo statis, tanpa login/database.</em>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

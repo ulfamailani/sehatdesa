@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Beranda · SehatDesa</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap site-header__inner" id="siteHeaderInner">
+    <a href="index.html" class="brand">
+      <span class="brand__mark">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 4 6v6c0 5 3.5 8.5 8 10 4.5-1.5 8-5 8-10V6l-8-4z"/></svg>
+      </span>
+      <span class="brand__text">
+        <span class="brand__name">Sehat<em>Desa</em></span>
+        <span class="brand__tag">Kesehatan Komunitas</span>
+      </span>
+    </a>
+
+    <nav class="main-nav">
+      <a href="index.html" class="is-active">Beranda</a>
+      <a href="posyandu.html">Posyandu</a>
+      <a href="gizi.html">Gizi</a>
+      <a href="penyakit.html">Penyakit</a>
+    </nav>
+
+    <div class="header-actions">
+      <span class="btn btn--outline btn--sm" style="pointer-events:none; opacity:0.6;">Demo statis</span>
+      <button class="nav-toggle" id="navToggle" aria-label="Buka menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<section class="hero">
+  <div class="wrap hero__inner">
+    <div>
+      <span class="hero__eyebrow">Layanan kesehatan desa berbasis AI</span>
+      <h1>Kesehatan keluarga desa, dipantau dan dipahami bersama.</h1>
+      <p class="lede">SehatDesa membantu warga, kader, dan Puskesmas mengakses informasi kesehatan dasar, jadwal posyandu, gizi keluarga, serta gejala penyakit umum — dilengkapi asisten AI yang siap menjawab 24 jam.</p>
+      <div class="hero__actions">
+        <a href="posyandu.html" class="btn btn--primary">Lihat Jadwal Posyandu</a>
+        <a href="gizi.html" class="btn btn--outline">Baca Gizi Keluarga</a>
+      </div>
+      <div class="hero__stats">
+        <div class="hero__stat"><strong>120+</strong><span>Warga terdaftar</span></div>
+        <div class="hero__stat"><strong>3</strong><span>Pilar informasi kesehatan</span></div>
+        <div class="hero__stat"><strong>24/7</strong><span>Asisten AI siaga</span></div>
+      </div>
+    </div>
+    <div>
+      <!-- Motif grafik pertumbuhan, terinspirasi Kartu Menuju Sehat (KMS) -->
+      <svg class="growth-chart" viewBox="0 0 420 320" xmlns="http://www.w3.org/2000/svg">
+        <rect x="0" y="0" width="420" height="320" rx="20" fill="#ffffff" stroke="#DCD1B8"/>
+        <g stroke="#EFE7D4" stroke-width="1">
+          <line x1="40" y1="30" x2="40" y2="280"/>
+          <line x1="40" y1="280" x2="390" y2="280"/>
+          <line x1="40" y1="220" x2="390" y2="220"/>
+          <line x1="40" y1="160" x2="390" y2="160"/>
+          <line x1="40" y1="100" x2="390" y2="100"/>
+        </g>
+        <text x="10" y="284">0</text><text x="10" y="164">12</text><text x="6" y="104">24</text>
+        <text x="36" y="300">Lahir</text><text x="180" y="300">6 bln</text><text x="350" y="300">2 th</text>
+        <path class="line-p97" d="M40 260 C 120 190, 220 120, 390 60" fill="none" stroke-width="2.4" stroke-linecap="round"/>
+        <path class="line-p50" d="M40 268 C 130 220, 230 170, 390 110" fill="none" stroke-width="2.8" stroke-linecap="round"/>
+        <path class="line-p3" d="M40 276 C 140 250, 240 220, 390 170" fill="none" stroke-width="2.4" stroke-linecap="round"/>
+        <circle cx="230" cy="172" r="5" fill="#E0603F"/>
+        <text x="242" y="176" fill="#E0603F" font-weight="700">Anak Anda</text>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<svg class="section-divider" viewBox="0 0 1180 46" preserveAspectRatio="none"><path d="M0 30 C 200 5, 400 45, 590 25 S 980 5, 1180 30" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section__head">
+      <span class="section__eyebrow">Tiga pilar</span>
+      <h2>Semua yang dibutuhkan posyandu dalam satu tempat</h2>
+    </div>
+    <div class="grid grid--3">
+      <div class="card card--feature">
+        <span class="card__icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="3"/><path d="M5 20c0-4 3-6 7-6s7 2 7 6"/></svg></span>
+        <h3>Jadwal Posyandu</h3>
+        <p>Informasi jadwal penimbangan balita, imunisasi, dan pemeriksaan lansia di dusun Anda, selalu terbaru.</p>
+        <a href="posyandu.html" class="btn btn--ghost btn--sm">Lihat jadwal →</a>
+      </div>
+      <div class="card card--feature">
+        <span class="card__icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21c-4-3-8-6-8-11a5 5 0 0 1 9-3 5 5 0 0 1 9 3c0 5-4 8-8 11z"/></svg></span>
+        <h3>Gizi Keluarga</h3>
+        <p>Artikel edukasi seputar pencegahan stunting, menu seimbang, dan gizi ibu hamil yang mudah dipahami.</p>
+        <a href="gizi.html" class="btn btn--ghost btn--sm">Baca artikel →</a>
+      </div>
+      <div class="card card--feature">
+        <span class="card__icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 4 6v6c0 5 3.5 8.5 8 10 4.5-1.5 8-5 8-10V6l-8-4z"/></svg></span>
+        <h3>Penyakit Umum</h3>
+        <p>Kenali gejala, pencegahan, dan penanganan awal penyakit yang sering muncul di lingkungan masyarakat.</p>
+        <a href="penyakit.html" class="btn btn--ghost btn--sm">Lihat daftar →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--tint">
+  <div class="wrap">
+    <div class="section__head">
+      <span class="section__eyebrow">Terjadwal</span>
+      <h2>Kegiatan posyandu terdekat</h2>
+    </div>
+    <div class="grid grid--3">
+      <div class="card">
+        <span class="pill">Balita</span>
+        <h3>Posyandu Melati I</h3>
+        <p>Balai Dusun I, Desa Makmur</p>
+        <p><strong>21 Jul 2026</strong> · pukul 08:00</p>
+      </div>
+      <div class="card">
+        <span class="pill">Lansia</span>
+        <h3>Posyandu Lansia Sejahtera</h3>
+        <p>Balai Dusun II, Desa Makmur</p>
+        <p><strong>24 Jul 2026</strong> · pukul 09:00</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section__head">
+      <span class="section__eyebrow">Edukasi</span>
+      <h2>Artikel gizi terbaru</h2>
+    </div>
+    <div class="grid grid--3">
+      <div class="card">
+        <span class="pill">Ibu Hamil</span>
+        <h3>Pentingnya 1000 Hari Pertama Kehidupan</h3>
+        <p>Periode emas tumbuh kembang anak dimulai sejak dalam kandungan hingga usia 2 tahun.</p>
+      </div>
+      <div class="card">
+        <span class="pill">Balita</span>
+        <h3>Cegah Stunting dengan Menu Seimbang</h3>
+        <p>Menu bergizi seimbang harian membantu mencegah stunting pada balita.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap site-footer__inner">
+    <div>
+      <span class="brand__name brand__name--footer">Sehat<em>Desa</em></span>
+      <p class="footer-note">Layanan informasi kesehatan dasar untuk warga, kader posyandu, dan Puskesmas. Seluruh konten bersifat edukatif dan bukan pengganti diagnosis tenaga medis profesional.</p>
+    </div>
+    <div>
+      <h4>Navigasi</h4>
+      <a href="index.html">Beranda</a>
+      <a href="posyandu.html">Jadwal Posyandu</a>
+      <a href="gizi.html">Gizi Keluarga</a>
+      <a href="penyakit.html">Penyakit Umum</a>
+    </div>
+    <div>
+      <h4>Butuh bantuan segera?</h4>
+      <p>Untuk kondisi darurat, segera hubungi Puskesmas terdekat atau layanan gawat darurat setempat. Jangan menunggu balasan dari Asisten AI.</p>
+    </div>
+  </div>
+  <div class="wrap site-footer__bottom">
+    &copy; 2026 SehatDesa. Dibangun untuk masyarakat desa. — <em>Versi demo statis, tanpa login/database.</em>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

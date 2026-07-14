@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Penyakit Umum · SehatDesa</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap site-header__inner" id="siteHeaderInner">
+    <a href="index.html" class="brand">
+      <span class="brand__mark">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 4 6v6c0 5 3.5 8.5 8 10 4.5-1.5 8-5 8-10V6l-8-4z"/></svg>
+      </span>
+      <span class="brand__text">
+        <span class="brand__name">Sehat<em>Desa</em></span>
+        <span class="brand__tag">Kesehatan Komunitas</span>
+      </span>
+    </a>
+
+    <nav class="main-nav">
+      <a href="index.html">Beranda</a>
+      <a href="posyandu.html">Posyandu</a>
+      <a href="gizi.html">Gizi</a>
+      <a href="penyakit.html" class="is-active">Penyakit</a>
+    </nav>
+
+    <div class="header-actions">
+      <span class="btn btn--outline btn--sm" style="pointer-events:none; opacity:0.6;">Demo statis</span>
+      <button class="nav-toggle" id="navToggle" aria-label="Buka menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+<section class="section">
+  <div class="wrap">
+    <div class="section__head">
+      <span class="section__eyebrow">Kenali & cegah</span>
+      <h1>Penyakit Umum di Lingkungan Masyarakat</h1>
+      <p>Kenali gejala awal, langkah pencegahan, dan penanganan pertama. Untuk gejala berat atau tidak membaik, segera periksa ke fasilitas kesehatan.</p>
+    </div>
+
+    <div class="grid grid--3">
+      <div class="card">
+        <span class="badge badge--warn">Sedang</span>
+        <h3 style="margin-top:10px;">Diare</h3>
+        <p><strong>Gejala:</strong> Buang air besar cair lebih dari tiga kali sehari, disertai kram perut.</p>
+        <p><strong>Pencegahan:</strong> Cuci tangan pakai sabun, konsumsi air bersih dan matang, jaga kebersihan makanan.</p>
+        <p><strong>Penanganan:</strong> Berikan oralit untuk mencegah dehidrasi, teruskan makan, segera ke fasilitas kesehatan jika disertai darah atau demam tinggi.</p>
+      </div>
+      <div class="card">
+        <span class="badge badge--danger">Waspada</span>
+        <h3 style="margin-top:10px;">Demam Berdarah Dengue (DBD)</h3>
+        <p><strong>Gejala:</strong> Demam tinggi mendadak, nyeri otot dan sendi, bintik merah pada kulit.</p>
+        <p><strong>Pencegahan:</strong> Lakukan 3M Plus: menguras, menutup, mendaur ulang tempat penampungan air, gunakan kelambu dan obat nyamuk.</p>
+        <p><strong>Penanganan:</strong> Perbanyak cairan, kompres hangat, segera periksa ke fasilitas kesehatan bila demam tidak turun dalam 2 hari.</p>
+      </div>
+    </div>
+    <p style="margin-top:16px; font-size:0.9rem; color:var(--ink-soft);">Catatan: ini adalah versi demo statis. Untuk menambah data penyakit secara langsung, aplikasi perlu dijalankan dengan PHP + database (lihat versi lengkap di repo).</p>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap site-footer__inner">
+    <div>
+      <span class="brand__name brand__name--footer">Sehat<em>Desa</em></span>
+      <p class="footer-note">Layanan informasi kesehatan dasar untuk warga, kader posyandu, dan Puskesmas. Seluruh konten bersifat edukatif dan bukan pengganti diagnosis tenaga medis profesional.</p>
+    </div>
+    <div>
+      <h4>Navigasi</h4>
+      <a href="index.html">Beranda</a>
+      <a href="posyandu.html">Jadwal Posyandu</a>
+      <a href="gizi.html">Gizi Keluarga</a>
+      <a href="penyakit.html">Penyakit Umum</a>
+    </div>
+    <div>
+      <h4>Butuh bantuan segera?</h4>
+      <p>Untuk kondisi darurat, segera hubungi Puskesmas terdekat atau layanan gawat darurat setempat. Jangan menunggu balasan dari Asisten AI.</p>
+    </div>
+  </div>
+  <div class="wrap site-footer__bottom">
+    &copy; 2026 SehatDesa. Dibangun untuk masyarakat desa. — <em>Versi demo statis, tanpa login/database.</em>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
