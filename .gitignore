@@ -1,0 +1,12 @@
+# Konfigurasi rahasia
+config/config.php
+
+# File diagnostik / sekali-jalan (jangan pernah ikut ke repo)
+test_api.php
+create_admin.php
+
+# Umum
+node_modules/
+.env
+.DS_Store
+*.log
