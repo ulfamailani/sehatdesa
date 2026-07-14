@@ -5,13 +5,16 @@
  * Sesuaikan nilai di bawah dengan akun MySQL/phpMyAdmin Anda.
  */
 
-define('DB_HOST', 'localhost');
-define('DB_NAME', 'sehatdesa');
-define('DB_USER', 'root');
-define('DB_PASS', '');
+// Kalau ada environment variable dari Railway (MYSQLHOST dkk), pakai itu.
+// Kalau tidak ada (mis. lagi dev lokal pakai XAMPP/Laragon), fallback ke localhost.
+define('DB_HOST', getenv('MYSQLHOST') ?: 'localhost');
+define('DB_NAME', getenv('MYSQLDATABASE') ?: 'sehatdesa');
+define('DB_USER', getenv('MYSQLUSER') ?: 'root');
+define('DB_PASS', getenv('MYSQLPASSWORD') ?: '');
+define('DB_PORT', getenv('MYSQLPORT') ?: '3306');
 
 // Ganti dengan string acak yang panjang (mis. hasil dari bin2hex(random_bytes(32)))
-define('APP_SECRET', 'GANTI_DENGAN_STRING_ACAK_PANJANG');
+define('APP_SECRET', getenv('APP_SECRET') ?: 'GANTI_DENGAN_STRING_ACAK_PANJANG');
 
 define('APP_NAME', 'SehatDesa');
 
